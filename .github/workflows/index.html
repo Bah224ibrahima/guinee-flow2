@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Guinée Flox 🇬🇳</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <h1>Guinée Flox 🇬🇳</h1>
+
+  <!-- AUTH -->
+  <div id="auth">
+    <input id="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Mot de passe">
+    <button onclick="register()">S'inscrire</button>
+    <button onclick="login()">Se connecter</button>
+  </div>
+
+  <!-- APP -->
+  <div id="app" class="hidden">
+    <textarea id="postInput" placeholder="Exprime-toi..."></textarea>
+    <input type="file" id="fileInput">
+    <button onclick="addPost()">Publier</button>
+    <button onclick="logout()" class="logout">Déconnexion</button>
+
+    <h2>Fil d'actualité</h2>
+    <div id="posts"></div>
+  </div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
